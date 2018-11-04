@@ -4,22 +4,18 @@ function check() {
   let question3 = document.quiz.question3.value;
   let correct = 0;
 
-  if (question1 !== "True") {
+  if (question1 == "False") {
     correct++;
   }
-  if (question2 !== "Peace") {
+  if (question2 == "Acetaldehyde") {
     correct++;
   }
-  if (question3 !== "completely safe") {
+  if (question3 == "Risk") {
     correct++;
   }
 
   let pictures = ["images/win.gif", "images/meh.gif", "images/lose.gif"];
-  let messages = [
-    "Great job!",
-    "That's just okay",
-    "You really need to do better"
-  ];
+  let messages = ["Great job!", "Meh", "ZERO"];
   let score;
 
   if (correct == 0) {
